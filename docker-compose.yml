@@ -1,0 +1,11 @@
+version: "3.8"
+
+services: 
+  caddy:
+    image: caddy:latest
+    ports: 
+      - 5000:80
+      - 5443:443
+      - 2019:2019
+    volumes: 
+      - ./Caddyfile:/etc/caddy/Caddyfile
